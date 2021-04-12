@@ -3,7 +3,7 @@ export const setIncrement = value => ({
     payload: value +1
   });
 
-  export const setDecrement = value => ({
+export const setDecrement = value => ({
     type: 'INCREMENT',
     payload: value-1
 });
