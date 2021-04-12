@@ -1,10 +1,23 @@
-export default (state = null, action) => {
+const INITIAL_STATE = {
+  value: 0
+};
+
+const incrementReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
       case 'INCREMENT':
-        return state + 1
+        console.log("inside increment",state)
+        return {
+          ...state,
+          value: action.payload
+        }
       case 'DECREMENT':
-        return state - 1
+        return {
+          ...state,
+          value: action.payload
+        }
       default:
         return state
     }
   }
+
+export default incrementReducer;

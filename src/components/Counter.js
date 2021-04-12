@@ -59,7 +59,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = state => ({
-  value: !state.increment?0:state.increment
+  value: state.increment.value
 });
 
 export default connect(
