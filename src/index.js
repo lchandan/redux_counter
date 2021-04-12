@@ -15,8 +15,8 @@ ReactDOM.render(
      <Sample/>
       <Counter
         value = {store.getState().increment.value}
-        onIncrement={() => store.dispatch({ type: 'INCREMENT' , payload: store.getState().increment.value++})}
-        onDecrement={() => store.dispatch({ type: 'DECREMENT', payload: store.getState().increment.value--})}
+        onIncrement={() => store.dispatch({ type: 'INCREMENT' , payload: store.getState().increment.value+1})}
+        onDecrement={() => store.dispatch({ type: 'DECREMENT', payload: store.getState().increment.value-1 })}
       />
   </Provider>,
   document.getElementById('root')
