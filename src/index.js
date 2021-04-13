@@ -6,6 +6,8 @@ import store from './redux/store';
 
 import Counter from './components/Counter'
 
+
+
 const Sample =()=>(
   <div><b>Chandan First Redux Component</b></div>
 )
@@ -15,9 +17,7 @@ ReactDOM.render(
      <Sample/>
       <Counter
         value = {store.getState().increment.value}
-        onIncrement={() => store.dispatch({ type: 'INCREMENT' , payload: store.getState().increment.value+1})}
-        onDecrement={() => store.dispatch({ type: 'DECREMENT', payload: store.getState().increment.value-1 })}
-      />
+       />
   </Provider>,
   document.getElementById('root')
 );

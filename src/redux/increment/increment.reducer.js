@@ -5,7 +5,7 @@ const INITIAL_STATE = {
 const incrementReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
       case 'INCREMENT':
-        console.log("inside increment",state)
+        console.log("inside Increment Reducer",state)
         return {
           ...state,
           value: action.payload
