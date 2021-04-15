@@ -1,5 +1,5 @@
 export const setIncrement = value => (
-console.log('inside Increment Actions--->'),
+console.log('inside Increment Actions--->', value, typeof(value)),
   {
     type: 'INCREMENT',
     payload: value +1
